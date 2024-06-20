@@ -1,0 +1,104 @@
+/* newprescription.css */
+.body {
+  background-image: url('backpres.png');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+.prescription-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: -100px;
+  
+}
+
+.patient-details,
+.medicine-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.patient-details label {
+  margin-bottom: 10px;
+}
+
+.medicine-inputs input {
+  margin-bottom: 5px;
+  width: 400px;
+}
+
+.medicine-buttons {
+  display: flex;
+  gap: 10px; /* Adjust the gap between buttons as needed */
+  margin-top: 10px;
+  background-color: rgb(9, 8, 37);
+  color: white;
+  border-color: rgb(251, 251, 251); /* Adjust the top margin as needed */
+}
+
+.added-medicines {
+  text-align: right;
+  color: white;
+  margin-top: -10px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  background-color: rgb(9, 8, 37);
+  color: white;
+  border-color: rgb(255, 255, 255);
+}
+
+.qr-code {
+  max-width: 100%;
+  height: auto;
+}
+/* Add these styles for the icons inside input fields */
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  color: rgb(10, 10, 10); 
+  margin-bottom: -0.9%
+  /* Set the icon color to white */
+}
+.input-container input {
+  padding-left: 30px; /* Adjust the padding as needed */
+}
+/* Add these styles to position the medicine suggestions below the input field */
+
+.medicine-suggestions {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: #fff; /* Set the background color of the suggestions */
+  border: 1px solid #ccc; /* Add a border for better visibility */
+  max-height: 150px; /* Set a max height for the suggestions */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+  z-index: 1; /* Ensure the suggestions appear above other elements */
+}
+
+.medicine-suggestions li {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee; /* Add a border between suggestions */
+}
+
+.medicine-suggestions li:last-child {
+  border-bottom: none; /* Remove border for the last suggestion */
+}

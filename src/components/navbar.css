@@ -1,0 +1,117 @@
+.navbar-section {
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(1, 1, 1);
+  
+}
+.navbar-title a {
+  color: #f4f4f5;
+  letter-spacing: .6px;
+  text-decoration: none;
+}
+
+.navbar-title {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-items {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  font-family: 'Rubik', sans-serif;
+}
+.navbar-items > li {
+  list-style-type: none;
+}
+.navbar-links {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  letter-spacing: .8px;
+}
+.navbar-links:hover {
+  color: #16395f;
+}
+.navbar-btn {
+  padding: 14px 20px;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 28px;
+  outline: transparent;
+ 
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: .8px;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+.navbar-btn:hover {
+  color: #0c0f12;
+  background-color: white;
+  border: 1px solid #194166;
+}
+/* Hamburger Icon */
+.mobile-nav {
+  display: none;
+}
+.hamb-icon {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+/* Mobile Navbar */
+.mobile-navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background-color: white;
+  z-index: 20;
+  justify-content: center;
+  align-items: center;
+  transition: left .5s ease-in-out;
+}
+.mobile-navbar-close {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+}
+
+.open-nav {
+  left: 0;
+}
+.mobile-navbar-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  gap: 24px;
+  text-align: center;
+}
+.mobile-navbar-links li a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  letter-spacing: .8px;
+  transition: color .3s ease-in-out;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .navbar-btn, .navbar-items {
+      display: none;
+  }
+  .mobile-nav {
+      display: block;
+  }
+}
